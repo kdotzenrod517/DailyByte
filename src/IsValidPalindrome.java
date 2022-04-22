@@ -7,6 +7,7 @@ public class IsValidPalindrome {
         System.out.println(isValidPalindrome("A man, a plan, a canal: Panama."));
     }
 
+    // O(n)
     public static Boolean isValidPalindrome(String s){
         s = s.replaceAll("[^A-Za-z]", "").toLowerCase();
         int i = 0;
