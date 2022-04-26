@@ -1,3 +1,5 @@
+package strings;
+
 public class CorrectCapitalization {
 
     public static void main(String[] args){
