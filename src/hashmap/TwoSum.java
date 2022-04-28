@@ -37,15 +37,15 @@ public class TwoSum {
 
     private static boolean twoSum(int[] nums, int k) {
 
-        Map<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
         int index = 0;
-        for (int i : nums) {
+        for(int i : nums){
             map.put(i, index++);
         }
 
-        for (int i = 0; i < nums.length; i++) {
+        for(int i = 0; i < nums.length; i++){
             int comp = k - nums[i];
-            if (map.containsKey(comp) && map.get(comp) != i) {
+            if(map.containsKey(comp) && map.get(comp) != i){
                 return true;
             }
         }
