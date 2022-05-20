@@ -2,36 +2,42 @@ package trees;
 
 import utils.Node;
 
+import javax.swing.tree.TreeNode;
+import java.util.ArrayList;
+import java.util.List;
+
 import static utils.CreateBST.getBST;
 
 public class BSTtoSortedLinkedList {
-    static Node prev = null;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Node node = treeToDoublyList(getBST());
         System.out.println(node);
     }
 
     public static Node treeToDoublyList(Node root) {
-        // use dummy Node
-        if(root == null) return root;
+        List<Integer> values = new ArrayList<>();
 
-        Node dummy = new Node (0);
-        prev = dummy;
-        inorder(root);
+        Node result = new Node();
+        Node current = result;
 
-        // connect head and tail
-        prev.right = dummy.right;
-        dummy.right.left = prev;
-        return dummy.right;
+        inorder(root, values);
+
+        for (int value : values) {
+            current.right = new Node(value);
+            current = current.right;
+        }
+
+        return result.right;
     }
 
-    private static void inorder(Node cur){
-        if(cur == null) return;
-        inorder(cur.left);
-        prev.right = cur;
-        cur.left = prev;
-        prev = cur;
-        inorder(cur.right);
+    public static void inorder(Node root, List<Integer> values) {
+        if (root == null) {
+            return;
+        }
+
+        inorder(root.left, values);
+        values.add(root.data);
+        inorder(root.right, values);
     }
 }
