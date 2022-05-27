@@ -15,6 +15,7 @@ public class MaxValuePerLevel {
         System.out.println(maxValueInLevels(getBST()));
     }
 
+    // O(n)
     public static List<Integer> maxValueInLevels(Node root) {
         List<Integer> result = new ArrayList<>();
         if(root == null) {
