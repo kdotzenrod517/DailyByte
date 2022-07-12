@@ -2,6 +2,8 @@ package AdvancedTopics;
 
 public class CreateTrie {
 
+    // Runtime of insert and search: O(N) where N is the length of the string we’re inserting or searching for.
+    // Space complexity of insert and search: O(N) where N is the length of the string and O(1) respectively.
     public static void main(String[] args){
         Trie trie = new Trie();
         trie.insert("programming");
