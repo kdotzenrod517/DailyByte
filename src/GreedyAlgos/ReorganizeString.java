@@ -11,6 +11,9 @@ public class ReorganizeString {
         System.out.println(reorganizeString("xxxy")); //
     }
 
+    // Runtime: O(NlogN) where N is the total number of elements in s.
+    // This results from adding our N elements to our heap and removing them all.
+    // Space complexity: O(N) where N is the total number of elements in s.
     public static String reorganizeString(String S) {
 
         Map<Character, Integer> map = new HashMap<Character, Integer>();
