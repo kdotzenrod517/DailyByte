@@ -1,4 +1,4 @@
-package TwoPointer;
+package twoPointer;
 
 public class LargestPool {
 
