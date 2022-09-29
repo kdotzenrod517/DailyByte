@@ -21,7 +21,6 @@ public class SoreThumb {
             }
         }
 
-
         return left;
     }
 }
