@@ -12,13 +12,13 @@ public class BinaryListSum {
 
     // Runtime: O(N) where N is the total number of elements in our list.
     // Space complexity: O(1) or constant.
-    public static int binaryListValue(ListNode head) {
-        int value = 0;
-        while (head != null) {
-            value = value * 2 + head.val;
-            head = head.next;
-        }
-
-        return value;
-    }
+//    public static int binaryListValue(ListNode head) {
+//        int value = 0;
+//        while (head != null) {
+//            value = value * 2 + head.val;
+//            head = head.next;
+//        }
+//
+//        return value;
+//    }
 }
