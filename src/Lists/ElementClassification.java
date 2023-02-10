@@ -1,7 +1,5 @@
 package Lists;
 
-import dynamicProgramming.ArtThief;
-
 import java.util.Arrays;
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package DP;
 
 public class MaximumSubarray {
 
