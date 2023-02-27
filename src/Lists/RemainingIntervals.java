@@ -23,13 +23,12 @@ public class RemainingIntervals {
         int remaining = 0;
         int start = -1;
         int end = -1;
-
         for(int[] interval : intervals){
             if(interval[0] > start && interval[1] > end){
                 remaining++;
                 start = interval[0];
             }
-            end = Math.max(end, interval[1]);
+            end = Math.max(interval[1], end);
         }
 
         return remaining;
