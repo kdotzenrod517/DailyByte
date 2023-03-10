@@ -1,4 +1,4 @@
-package Lists;
+package Lists.Bits;
 
 public class BitArray {
 
