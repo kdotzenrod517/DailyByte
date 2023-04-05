@@ -1,4 +1,4 @@
-package DFS;
+package DFS.BinaryTree;
 
 import utils.Node;
 
